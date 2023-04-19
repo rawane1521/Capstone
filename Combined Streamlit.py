@@ -5,10 +5,23 @@ import pandas as pd
 import os
 from PIL import Image
 from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 import spacy
 from spacy.matcher import PhraseMatcher
 import skillNer
+import plotly
+import plotly.graph_objs as go
 from streamlit_option_menu import option_menu
+import matplotlib.pyplot as plt
+plt.style.use("seaborn-whitegrid")
+import seaborn as sns
+from collections import Counter
+import warnings
+warnings.filterwarnings("ignore")
+from plotly import tools
+import matplotlib.pyplot as plt
+
+
 
 im = Image.open("Forward-MENA-logo.png")
 
@@ -276,7 +289,7 @@ if Menu == "Skills Extraction":
 
 if Menu == "Score Matching": 
     # Load data from CSV file
-    df = pd.read_excel('ExtractedSkills.xlsx')
+    df = pd.read_excel('ExtractedSkills6.xlsx')
 
     # Create list of unique job names
     job_names = df["Original JT"].unique().tolist()
