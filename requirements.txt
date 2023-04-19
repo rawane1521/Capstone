@@ -1,4 +1,4 @@
-streamlit==1.5.1
+
 pandas==1.4.3
 streamlit-lottie==0.0.3
 pickleshare==0.7.5
@@ -9,8 +9,15 @@ matplotlib==3.5.2
 seaborn==0.11.2
 scikit-learn>=0.18
 streamlit-option-menu==0.3.2
-numpy==1.19.5
+numpy==1.21.3
 Pillow==8.4.0
-wordcloud==1.8.1
-spacy==3.2.0
-
+win-unicode-console==0.5
+wincertstore==0.2
+wordcloud==1.8.2.2
+spacy==3.5.1
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
+webdriver-manager==3.8.5
+statsmodels==0.13.2
+streamlit==1.21.0
+selenium==4.8.2
