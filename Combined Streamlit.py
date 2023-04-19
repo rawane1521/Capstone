@@ -289,7 +289,7 @@ if Menu == "Skills Extraction":
 
 if Menu == "Score Matching": 
     # Load data from CSV file
-    df = pd.read_excel('ExtractedSkills6.xlsx')
+    df = pd.read_excel('ExtractedSkills.xlsx')
 
     # Create list of unique job names
     job_names = df["Original JT"].unique().tolist()
