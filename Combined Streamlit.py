@@ -5,24 +5,12 @@ import pandas as pd
 import os
 from PIL import Image
 from wordcloud import WordCloud
-import matplotlib.pyplot as plt
 import spacy
 from spacy.matcher import PhraseMatcher
 import skillNer
-import plotly
-import plotly.graph_objs as go
 from streamlit_option_menu import option_menu
-import matplotlib.pyplot as plt
-plt.style.use("seaborn-whitegrid")
-import seaborn as sns
-from collections import Counter
-import warnings
-warnings.filterwarnings("ignore")
-from plotly import tools
-import matplotlib.pyplot as plt
 
-
-im = Image.open("C:/Users/user/Desktop/Capstone/Forward-MENA-logo.png")
+im = Image.open("Forward-MENA-logo.png")
 
 st.set_page_config(
     page_title="ForasTech Skilling Tools",
@@ -43,7 +31,7 @@ Menu = option_menu(None, ["Home", "Scraping","Skills Extraction","Score Matching
 
 
 #Setting Conditions 
-video_file = open('C:/Users/user/Desktop/Capstone/FMQ_Digital-World_Music-only-2.mp4', 'rb')
+video_file = open('FMQ_Digital-World_Music-only-2.mp4', 'rb')
 video_bytes = video_file.read()
 if Menu == "Home": st.video(video_bytes)
 if Menu == "Home": st.title("FIND OUT ABOUT THE TOP SKILLS NEEDED IN THE MARKET TODAY!")
@@ -288,7 +276,7 @@ if Menu == "Skills Extraction":
 
 if Menu == "Score Matching": 
     # Load data from CSV file
-    df = pd.read_excel('C:/Users/user/Desktop/Capstone/Codes/ExtractedSkills6.xlsx')
+    df = pd.read_excel('ExtractedSkills.xlsx')
 
     # Create list of unique job names
     job_names = df["Original JT"].unique().tolist()
